@@ -1,0 +1,45 @@
+
+#contTEN {
+	width: 160px;
+}
+.clear {
+	clear: both;
+	line-height: 1px;
+	font-size: 1px;
+}
+#gallery_nav a { 
+	outline-color: #888;	
+	margin-bottom: 10px;
+}
+.radiu{
+	border-radius: 50%;
+}
+#gallery img {
+	border: none;
+	width: 30px;
+	height: 30px;
+}
+
+#gallery_nav {
+	float: left;
+	width: 40px;
+	text-align: center;
+}
+#gallery_nav a{
+	display: block;height: 30px;
+	width: 30px;
+}
+#gallery_output {
+	float: left;
+	overflow: hidden;
+}
+
+#gallery_output img {
+	display: block;
+	margin: 0px auto 0 auto;
+	width: 115px;
+	height: 115px;
+}
+.on{ border: 1px solid #ffffff;
+	border-radius: 100px;
+}
