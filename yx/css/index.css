@@ -1,0 +1,1801 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.swiper-slide>img{
+    width: 100%;
+    height: auto;
+}
+.pic-slide>ul{
+    position: relative;
+    overflow: hidden;
+}
+.pre{
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    color: #fff;
+    left: 2%;
+}
+.next{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    color: #fff;
+}
+.slick-dots{
+    display: none!important;
+}
+.slide>img{
+    width: 100%;
+    height: auto;
+}
+.slide:nth-child(1){
+	background: url(http://yinxing.com/static/cms/image/indexbanner.png) center top;
+}
+.news{
+    transform: translateY(-21px);
+    height: auto;
+}
+
+.thumb-box{
+    position: relative;
+}
+.thumb-box::before{
+    content: "查看更多+";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2aad;
+    color: #fff;
+    text-align: center;
+    line-height: 17vw;
+    opacity: 0;
+    transition: .5s;
+    font-weight: bold;
+}
+.article:hover .thumb-box::before{
+    opacity: 1;
+}
+
+.body-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-body{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.body-logo>p{
+    font-size: 60px;
+    font-variant: all-petite-caps;
+    margin: 0;
+    font-weight: bolder;
+    position: relative;
+    left: -30px;
+}
+.news-list>ul{
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article{
+    height: 100%;
+    width: 32%;
+    min-width: 20vw;
+    margin-bottom: 2vh;
+    box-shadow: none;
+    z-index: 2;
+}
+.article:hover{
+    box-shadow:  0px 0px 8px 0px #2a2a2a3d;
+}
+.article>a,.article>a:hover{
+    text-decoration: none;
+    color: #2a2a2a;
+}
+.thumb{
+    height: 16vw;
+    width: 100%;
+	border-radius: 2px;
+}
+.news-content{
+    height: 12vw;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.time{
+    font-family: Microsoft YaHei;
+	font-size: 0.5vw;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+    color: #22356f;
+    margin: 5% 0;
+    padding-left: 1%;
+}
+.article-title{
+    font-size: 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    border-left: 5px solid #22356f;
+    padding-left: 7px;
+    font-weight: bold;
+}
+.nl-1,.nl-2,.nl-3{
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.news-active{
+    display: flex;
+    opacity: 1;
+}
+.news-more>a{
+    display: inline-block;
+    color: #22356F;
+    text-decoration: none;
+    padding: 4px 11px;
+	border:1px solid #22356F;
+    border-radius: 17px;
+}
+.article-intro{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 0.7vw;
+    padding: 1%;
+}
+.icon-btn-group{
+    display: flex;
+    width: 85px;
+    margin-bottom: 0;
+}
+.icon-btn-group>li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    list-style: none;
+    margin-left: 16px;
+}
+.icon-active{
+    background-color: #22356f !important;
+}
+.list-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.prev-list{
+    color: #9B815E;
+    font-size: 16px;
+}
+.next-list{
+    color: #9B815E;
+    font-size: 16px;
+    transform: translateX(13px);
+}
+
+
+
+
+/* 关于我们 */
+.about-us{
+    background: url("../image/about-bg.png")no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+    width: 100%;
+    margin: 0!important;
+    flex-direction: column;
+    position: relative;
+    top: -22px;
+}
+
+
+
+
+
+
+
+.culture{
+    width: 100%;
+    position: relative;
+	background: url(../image/bottom-bgm.jpg) center top;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.culture>ul{
+    width: 100%;
+    height: auto;
+	margin:247px auto 122px;
+}
+
+.culture>ul>li:nth-of-type(1){
+    background: url("../image/xbw.png")no-repeat center center;
+    background-size: cover;
+}
+.culture>ul>li:nth-of-type(2){
+    background: url("../image/list-card-2.jpg")no-repeat center center;
+    background-size: cover;
+}
+.culture>ul>li:nth-of-type(3){
+    background: url("../image/list-card-3.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+
+.weichat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weichat>div:nth-of-type(2){
+    margin-right: 10px;
+}
+.weichat>div:nth-of-type(2),.weichat>div:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.QR-code{
+	float: right;
+}
+.QR-code>div:nth-of-type(2)>a{
+    color: #fff;
+    text-decoration:none;
+}
+.QR-code>div:nth-of-type(2){
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.campus-pic>a{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 13px;
+    background-color: #ffffff1f;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10px;
+    font-size: 1vw;
+}
+.campus-pic>a>i{
+    padding-right: 9px;
+}
+
+
+.beian{
+    font-size: 12px;
+}
+.side-nav{
+    width: 17vw;
+    height: 100vh;
+    position: fixed;
+    right: -19vw;
+    background-color: #fff;
+    box-shadow: 0px -2px 16px #0a0a0a;;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(18vw);
+    transition: 1s;
+    opacity: 0;
+}
+.side-active{
+    transform: translateX(-18vw);
+    opacity: 1;
+    display: flex;
+}
+.side-nav>img{
+    width: 80%;
+}
+.side-off{
+    float: right;
+    margin: 20px 21px;
+    font-size: 20px!important;
+    transform: translateX(126px);
+}
+.side-nav>img{
+    margin-bottom: 2vh;
+}
+.side-nav>ul{
+    width: 100%;
+    height: 51vh;
+    margin-bottom: 2vh;
+}
+.side-nav>ul>li{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 40px;
+    line-height: 58px;
+    border-bottom: 1px solid #9E9E9E;
+}
+.side-nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+
+.side-nav-code>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.side-nav-code>div:nth-of-type(1){
+    margin-right: 10px;
+}
+.side-nav-info>ul>li{
+    list-style: none;
+    font-size: 13px;
+    padding-left: 1vw;
+    padding-bottom: 2px;
+}
+.side-beian{
+    font-size: 10px;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+.colu-name>h2{
+    font-size: 24px;
+	color: black;
+	font-weight: bold;
+}
+.colu-name>p{
+    font-size: 1vw;
+    font-variant: all-petite-caps;
+    color: #9B815E;
+    font-weight: bold;
+}
+.body-logo>img{
+    width: 18vw;
+}
+
+
+.news-more{
+    font-size: 0.9vw;
+}
+.weichat>div>p{
+    font-size: 0.9vw;
+}
+.weichat>div>img{
+    width: 5.5vw;
+}
+.QR-code>div>p,.QR-code>div>a{
+    font-size: 0.5vw;
+}
+.campus-pic>img{
+    width: 16vw;
+    padding-right: 1vw;
+    border-right: 2px solid #fff;
+}
+.news-list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media (max-width:1200px){
+    .news-content {
+        height: 155px;
+    }
+}
+
+@media (max-width:1000px){
+    .colu-group{
+        height: 511px;
+        width: 100%;
+        background: #0000004f;
+        position: absolute;
+        z-index: 99;
+    }
+    .colu-group>li{
+        width: 100%;
+    }
+    .align-items-end{
+        width: 100vw!important;
+    }
+    .navbar-toggler{
+        transform: translate(12px, -22px);
+    }
+    #menu{
+        width: 100%;
+        position: relative;
+    }
+    .search{
+        width: 100%;
+        padding-left: 20px;
+        border: 1px solid #767f9a;
+        border-radius: 4px;
+        line-height: 26px;
+    }
+    .logo{
+        max-width: 248px;
+        padding-left: 0;
+        transform: translateY(-1vh);
+    }
+    .btn-group{
+        transform: translate(61vw, 1px);
+        position: absolute!important;
+    }
+    .side-nav {
+        width: 319px;
+        transform: translateX(28vw);
+    }
+    .side-active {
+        transform: translateX(-18vw);
+    }
+    .btn-group {
+        width: 32vw;
+    }
+    .news-list>ul {
+        flex-wrap: wrap;
+    }
+    .body-logo>img{
+        width: 25vw;
+    }
+    .culture-pic {
+        transform: translate(9vw,10vh);
+    }
+    .QR-code {
+        display: none;
+    }
+    .campus-pic>img {
+        width: 24vw;
+    }
+
+
+    .news-content {
+        height: 19vw;
+    }
+}
+@media (max-width:576px){
+
+    .campus-logo {
+        margin: 0 auto;
+    }
+    .campus-pic>img {
+        width: 57vw;
+    }
+    .culture,.culture>ul,.culture::before {
+        transform: none;
+        flex-wrap: wrap;
+    }
+    .culture>ul{
+        margin-top: 10px;
+        margin-bottom: 0!important;
+    }
+    .culture {
+        height: auto;
+    }
+    .campus-culture {
+        height: auto;
+        width: 100%;
+    }
+    .culture-title{
+        background-color: #9B815E;
+        color: #fff;
+        width: 100%;
+        line-height: 0vh;
+        height: 13vh;
+        margin: 0 0 35px 0;
+    }
+    .culture-title>h3::before,.culture-title>h3::after {
+            display: none;
+    }
+    .culture-title>h3{
+        font-size: 6vw!important;
+		padding:0 10px 10px 10px;
+		margin: 0;
+    }
+    .culture-title>p {
+        color: #fff;
+    }
+    .list-btn {
+        bottom: 84px;
+    }
+    .icon-btn-group {
+        margin-bottom: 0;
+    }
+    .news {
+        width: 100%;
+    }
+    .article {
+        width: 100%;
+    }
+    .time {
+        line-height: 15px;
+    }
+    .article-title {
+        line-height: 24px;
+    }
+    .thumb{
+        height: auto;
+
+    }
+    .news-content {
+        height: 150px;
+    }
+    .article-intro {
+        -webkit-line-clamp: 3;
+    }
+    .search {
+        width: 100%;
+    }
+
+    .pic,.video {
+        height: 150px;
+    }
+    .pic-slide>ul {
+        width: 100%;
+        /*transform: translateY(5vw);*/
+    }
+    .navbar{
+        background-color: #22356f!important;
+    }
+    .culture-title{
+        position: relative;
+        top: 23px;
+        margin: 0;
+    }
+
+
+    .thumb-box::before {
+        line-height: 55vw;
+    }
+    ol, ul, dl {
+        margin-bottom: 0!important;
+    }
+}
+
+.culture-footer-content .beian{
+	padding: 10px 0px;
+	line-height: 16px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: left;
+	margin:0;
+}
+
+@media (max-width:570px) {
+	.news-body {
+		    width: 90%;
+			margin: 0 auto;
+		}
+	.about-us{
+	    	width: 100%;
+			padding-bottom: 30px;
+	}
+	.about-us .container{
+	    	width: 90% !important;
+	    	border: 0;
+	    	padding: 0;
+	    	margin: 0 auto;
+	    	position: relative;
+			overflow: visible;
+	}
+		.university-info{
+		    background-color: #ffffff1a;
+		    width: 98%;
+		    border-radius: 10px;
+		    text-align: center;
+		    color: white;
+			margin: 0 auto;
+			position: relative;
+		}
+		.about-title{
+	    	width: 100%;
+			height: 75px;
+	}
+		.about-pic{
+			position: absolute;
+			top: -50px;
+			left: 0px;
+			width: 115px;
+			height: 34px;
+		}
+		.about-info{
+			display: block;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+		}
+		.info-title-wrap{
+			width: 100%;
+			height:50px;
+			margin:0 auto;
+			border-bottom: 2px solid grey;
+		}
+		.info-title{
+			width:100%;
+			height:20px;
+			font-size: 16px !important;
+			padding-top:10px;
+			padding-left: 20px;
+			line-height: 20px;
+		    text-align: left;
+		    line-height: 14px;
+		    font-size: 20px;
+		    position: relative;
+		}
+		.info-en{
+			width: 100%;
+			height:15px;
+			line-height: 15px;
+			text-align: left;
+			font-size: 10px;
+			padding-left: 20px;
+		}
+		.info-content{
+			width:98%;
+			line-height:20px;
+			margin:10px auto;
+		}
+		.info-content>p{
+			font-size: 12px !important;
+			color: white;
+			line-height:20px;
+			text-align: left;
+			text-indent: 2em;
+			border: 0;
+			padding: 0;
+			margin: 0;
+			letter-spacing: 1px;
+		}
+		.info-content p:nth-child(1){
+			padding-bottom: 5px;
+		}
+		.info-more{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			border-top: 2px solid grey;
+		}
+		.info-more>a{
+			display: block;
+			width: 60px;
+			height: 16px;
+			margin-top:8px;
+			float: right;
+			margin-right: 40px;
+			background: url(../image/find-more.png);
+			background-size: cover;
+		}
+		.yxvideo{
+			width: 60px;
+			height: 14px;
+			position: absolute;
+			top: 30px;
+			right: 10px;
+			background: url(../image/yxvideo.png);
+			background-size: cover;
+		}
+	.photo-reports{
+			display: none;
+		}
+		.photo-reports .pic{
+			 width: 418px;
+	      height: 160px;
+	      background: url("../image/about-card.png")no-repeat center center;
+		     background-size: cover;
+		     border-radius: 10px;
+		 }
+		 .photo-reports .video{
+		 	width: 418px;
+		 	height: 160px;
+			margin-top: 15px;
+			background: url("../image/video.png")no-repeat center center;
+		    background-size: cover;
+		    border-radius: 10px;
+		  }
+		  
+.culture{
+	  width: 100%;
+  }
+.culture>ul{
+	  width: 90%;
+	  padding-top:80px;
+	  margin-left: 5%;
+}
+.campus-culture .culture>ul>li{
+width: 100% !important;	
+height: 130px;
+margin-left: 0 !important;
+margin-right: 0 !important;
+margin-bottom: 5px;
+}
+ .culture>ul>li:nth-child(3){
+	margin-bottom:20px;
+}
+ .culture>ul>li:nth-child(4){
+	width:100%;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid grey;
+	overflow: hidden;
+}
+dl,dt,ul,li{
+	list-style: none;
+}
+.culture>dl{
+	height:100%;
+	float: left;
+	border: 0;
+	margin: 0;
+	padding:0;
+	color: white;
+}
+dt{
+	font-size: 18px;
+	line-height: 25px;
+	color: white;
+}
+dd{
+	float: left;
+	display: block;
+	line-height: 25px;
+	margin-right: 20px;
+}
+dd>a{
+	line-height: 25px;
+	font-size: 14px;
+	color: white;
+}
+
+.culture-footer{
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+}
+.culture-footer-content{
+	width: 90%;
+	margin:0 auto;
+	padding-top:20px;
+	overflow: hidden;
+}
+.campus-information{
+	width:100%;
+	float: left;
+}
+.campus-information>p{
+	color: white;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.culture-footer-content .beian{
+	text-align: left;
+}
+.campus-logo{
+	width: 90%;
+	margin-top:25px;
+	float: left;
+}
+.campus-pic>img{
+	width: 245px;
+	padding-bottom: 5px;
+	border:0px;
+}
+.campus-pic>a{
+	display: inline-block;
+	margin-top:10px;
+	margin-left: 0;
+}
+
+.QR-code{
+	margin-right: 20px;
+}
+#contTEN{
+	margin: 0 !important;
+	border: 0 !important;
+	padding: 0 !important;
+}
+	
+}
+
+dd>a:hover{
+	color: white;
+}
+/* 补充样式 */
+/* 内容1000px 屏幕大于800px小于1000px*/
+@media (max-width:999px){
+	.news-body {
+	    width: 90%;
+		margin: 0 auto;
+	}
+   .about-us{
+       	width: 100%;
+		padding-bottom: 30px;
+   }
+   .about-us .container{
+       	width: 90% !important;
+       	border: 0;
+       	padding: 0;
+       	margin: 0 auto;
+       	position: relative;
+   		overflow: visible;
+   }
+   	.university-info{
+   	    background-color: #ffffff1a;
+   	    width: 98%;
+   	    border-radius: 10px;
+   	    text-align: center;
+   	    color: white;
+   		margin: 0 auto;
+   		position: relative;
+   	}
+   	.about-title{
+       	width: 100%;
+   		height: 75px;
+   }
+   	.about-pic{
+   		position: absolute;
+   		top: -50px;
+   		left: 0px;
+   		width: 115px;
+   		height: 34px;
+   	}
+   	.about-info{
+   		display: block;
+   		justify-content: center;
+   		align-items: center;
+   		height: auto;
+   	}
+   	.info-title-wrap{
+   		width: 100%;
+   		height:50px;
+   		margin:0 auto;
+   		border-bottom: 2px solid grey;
+   	}
+   	.info-title{
+   		width:100%;
+   		height:20px;
+   		font-size: 16px !important;
+   		padding-top:10px;
+   		padding-left: 20px;
+   		line-height: 20px;
+   	    text-align: left;
+   	    line-height: 14px;
+   	    font-size: 20px;
+   	    position: relative;
+   	}
+   	.info-en{
+   		width: 100%;
+   		height:15px;
+   		line-height: 15px;
+   		text-align: left;
+   		font-size: 10px;
+   		padding-left: 20px;
+   	}
+   	.info-content{
+   		width:98%;
+   		line-height:20px;
+   		margin:10px auto;
+   	}
+   	.info-content>p{
+   		font-size: 12px !important;
+   		color: white;
+   		line-height:20px;
+   		text-align: left;
+   		text-indent: 2em;
+   		border: 0;
+   		padding: 0;
+   		margin: 0;
+   		letter-spacing: 1px;
+   	}
+   	.info-content p:nth-child(1){
+   		padding-bottom: 5px;
+   	}
+   	.info-more{
+   		width: 100%;
+   		height: 40px;
+   		line-height: 40px;
+   		border-top: 2px solid grey;
+   	}
+   	.info-more>a{
+   		display: block;
+   		width: 60px;
+   		height: 16px;
+   		margin-top:8px;
+   		float: right;
+   		margin-right: 40px;
+   		background: url(../image/find-more.png);
+   		background-size: cover;
+   	}
+   	.yxvideo{
+   		width: 60px;
+   		height: 14px;
+   		position: absolute;
+   		top: 30px;
+   		right: 10px;
+   		background: url(../image/yxvideo.png);
+   		background-size: cover;
+   	}
+   .photo-reports{
+   		display: none;
+	}
+   	.photo-reports .pic{
+   		 width: 418px;
+         height: 160px;
+         background: url("../image/about-card.png")no-repeat center center;
+   	     background-size: cover;
+   	     border-radius: 10px;
+   	 }
+   	 .photo-reports .video{
+   	 	width: 418px;
+   	 	height: 160px;
+   		margin-top: 15px;
+   		background: url("../image/video.png")no-repeat center center;
+   	    background-size: cover;
+   	    border-radius: 10px;
+   	  }
+	  
+	    .culture{
+	  		  width: 100%;
+	  	  }
+		.culture>ul{
+		  width: 90%;
+		  padding-top:30px;
+		  margin: 100px auto 50px;
+	  	}
+	  .culture>ul>li{
+	  	   width: 32%;
+	  	   height: 120px;
+		   float: left;
+	  	}
+		.culture>ul>li:nth-child(1){
+			margin-left:1%;
+			margin-right:1%;
+		}
+	  	 .culture>ul>li:nth-child(2){
+	  		margin-right:1%;
+	  	}
+		.culture>ul>li:nth-child(3){
+		}
+	  	 .culture>ul>li:nth-child(4){
+	  		width:100%;
+			height: auto;
+			margin-top: 20px;
+	  		padding: 10px 10px 10px 10px;
+	  		border: 1px solid grey;
+			overflow: hidden;
+	  	}
+	  	dl,dt,ul,li{
+	  		list-style: none;
+	  	}
+	  	.culture>dl{
+	  		height:100%;
+	  		float: left;
+	  		border: 0;
+	  		margin: 0;
+	  		padding:0;
+	  		color: white;
+	  	}
+	  	dt{
+	  		font-size: 18px;
+	  		line-height: 25px;
+	  		color: white;
+	  	}
+	  	dd{
+	  		float: left;
+	  		display: block;
+	  		line-height: 25px;
+	  		margin-right: 20px;
+	  	}
+	  	dd>a{
+	  		line-height: 25px;
+	  		font-size: 14px;
+	  		color: white;
+	  	}
+	  	
+	  	.culture-footer{
+	  		width: 100%;
+			overflow: hidden;
+	  		background-color: rgba(0,0,0,0.5);
+	  	}
+	  	.culture-footer-content{
+	  		width: 90%;
+	  		margin:0 auto;
+	  		padding-top:20px;
+	  		overflow: hidden;
+	  	}
+	  	.campus-information{
+	  		width:100%;
+	  		float: left;
+	  	}
+	  	.campus-information>p{
+	  		color: white;
+	  		line-height: 25px;
+	  		font-size: 12px;
+	  		padding: 0;
+	  		margin: 0;
+	  		border: 0;
+	  	}
+	  	.campus-logo{
+	  		width: 90%;
+	  		margin-top:25px;
+	  		float: left;
+	  	}
+		.campus-pic>img{
+			width: 245px;
+			padding-bottom: 5px;
+			border:0px;
+		}
+		.campus-pic>a{
+			display: inline-block;
+			margin-top:10px;
+			margin-left: 0;
+		}
+	  	.QR-code{
+	  		margin-right: 20px;
+	  	}
+	  	#contTEN{
+	  		margin: 0 !important;
+	  		border: 0 !important;
+	  		padding: 0 !important;
+	  	}
+}
+/* 内容1000px*/
+
+/* 内容1000px 屏幕大于1100小于1300px*/
+@media (min-width:1000px){
+   .about-us{
+       	width: 100%;
+       	height: 450px;
+   }
+   .about-us .container{
+       	width: 1000px !important;
+       	height:450px;
+       	border: 0;
+       	padding: 0;
+       	margin: 0 auto;
+       	position: relative;
+   		overflow: visible;
+   }
+   	.university-info{
+   	    background-color: #ffffff1a;
+   	    width: 450px;
+   	    height: 300px;
+   	    border-radius: 10px;
+   	    text-align: center;
+   	    color: white;
+   		float: left;
+   		position: relative;
+   	}
+	.about-title{
+       	width: 100%;
+   		height: 75px;
+   }
+   	.about-pic{
+   		position: absolute;
+   		top: -50px;
+   		left: 180px;
+		width: 115px;
+		height: 34px;
+   	}
+   	.about-info{
+   		display: block;
+   		justify-content: center;
+   		align-items: center;
+   		height: auto;
+   	}
+   	.info-title-wrap{
+   		width: 100%;
+   		height:50px;
+   		margin:0 auto;
+   		border-bottom: 2px solid grey;
+   	}
+   	.info-title{
+   		width:100%;
+   		height:20px;
+   		font-size: 16px !important;
+   		padding-top:10px;
+   		padding-left: 20px;
+   		line-height: 20px;
+   	    text-align: left;
+   	    line-height: 14px;
+   	    font-size: 20px;
+   	    position: relative;
+   	}
+   	.info-en{
+   		width: 100%;
+   		height:15px;
+   		line-height: 15px;
+   		text-align: left;
+   		font-size: 10px;
+   		padding-left: 20px;
+   	}
+   	.info-content{
+   		width:430px;
+   		height:200px;
+   		line-height:16px;
+   		margin:10px auto;
+   	}
+   	.info-content>p{
+   		font-size: 12px !important;
+   		color: white;
+   		line-height:16px;
+   		text-align: left;
+   		text-indent: 2em;
+   		border: 0;
+   		padding: 0;
+   		margin: 0;
+   		letter-spacing: 1px;
+   	}
+   	.info-content p:nth-child(1){
+   		padding-bottom: 5px;
+   	}
+   	.info-more{
+   		width: 100%;
+   		height: 40px;
+   		line-height: 40px;
+   		border-top: 2px solid grey;
+   	}
+   	.info-more>a{
+   		display: block;
+   		width: 60px;
+   		height: 16px;
+   		margin-top:8px;
+   		float: right;
+   		margin-right: 40px;
+   		background: url(../image/find-more.png);
+		background-size: cover;
+   	}
+   	.yxvideo{
+   		width: 60px;
+   		height: 14px;
+   		position: absolute;
+   		top: 235px;
+   		right: 0px;
+   		background: url(../image/yxvideo.png);
+		background-size: cover;
+   	}
+   .photo-reports{
+   		width: 418px;
+   		margin-left:56px;
+   		float: left;
+   	}
+   	.photo-reports .pic{
+   		 width: 418px;
+         height: 160px;
+         background: url("../image/about-card.png")no-repeat center center;
+   	     background-size: cover;
+   	     border-radius: 10px;
+   	 }
+   	 .photo-reports .video{
+   	 	width: 418px;
+   	 	height: 160px;
+		margin-top: 15px;
+		background: url("../image/video.png")no-repeat center center;
+   	    background-size: cover;
+   	    border-radius: 10px;
+   	  }
+	  
+	  
+	  
+	   .culture{
+	  		  width: 100%;
+	  	  }
+	  	   .culture>ul{
+	  	  	  width: 1000px !important;
+	  		  height: 145px;
+	  	}
+	  .culture>ul>li{
+	  	   width: 210px;
+	  	   height: 100%;
+	  	   float: left;
+	  	   margin-right:30px;
+	  	}
+	  	.culture>ul>li:nth-child(1){
+	  		margin-left:50px;
+	  	}
+	  	 .culture>ul>li:nth-child(3){
+	  		margin-right:50px;
+	  	}
+	  	 .culture>ul>li:nth-child(4){
+	  		width:180px;
+	  		padding-left: 20px;
+	  		border-left: 1px solid grey;
+	  	}
+	  	dl,dt,ul,li{
+	  		list-style: none;
+	  	}
+	  	.culture>dl{
+	  		height:100%;
+	  		float: left;
+	  		border: 0;
+	  		margin: 0;
+	  		padding:0;
+	  		color: white;
+	  	}
+	  	dt{
+	  		font-size: 18px;
+	  		line-height: 25px;
+	  		color: white;
+	  	}
+	  	dd{
+	  		float: left;
+	  		display: block;
+	  		line-height: 25px;
+	  		margin-right: 20px;
+	  	}
+	  	dd>a{
+	  		line-height: 25px;
+	  		font-size: 14px;
+	  		color: white;
+	  	}
+	  	
+	  	.culture-footer{
+	  		width: 100%;
+	  		height: 208px;
+	  		margin: 0 auto;
+	  		background-color: rgba(0,0,0,0.5);
+	  	}
+	  	.culture-footer-content{
+	  		width: 1000px;
+	  		height: 100%;
+	  		margin:0 auto;
+	  		padding-top:50px;
+	  		overflow: hidden;
+	  	}
+	  	.campus-information{
+	  		width:300px;
+	  		float: left;
+	  	}
+	  	.campus-information>p{
+	  		color: white;
+	  		line-height: 25px;
+	  		font-size: 12px;
+	  		padding: 0;
+	  		margin: 0;
+	  		border: 0;
+			
+	  	}
+	  	.culture-footer-content .beian{
+			margin-top: 50px;
+		}
+	  	.campus-logo{
+	  		width: 370px;
+	  		margin-left:100px;
+	  		margin-top:25px;
+	  		float: left;
+	  	}
+		.campus-pic>img{
+		    width: 245px;
+		    padding-right: 1vw;
+		    border-right: 2px solid #fff;
+		}
+	  	.QR-code{
+	  		margin-right: 20px;
+	  	}
+	  	#contTEN{
+	  		margin: 0 !important;
+	  		border: 0 !important;
+	  		padding: 0 !important;
+	  	}
+}
+
+.campus-logo>p{
+	text-align: center;
+}
+.gallery_out>p{
+	width: 100% !important;
+	text-align: center !important;
+}
+/* 内容1000px*/
+
+/* 内容1200px 屏幕大于1300小于1600*/
+@media (min-width:1300px){
+    .about-us{
+    	width: 100%;
+    	height: 540px;
+    }
+    .about-us .container{
+    	width: 1200px !important;
+    	height:540px;
+    	border: 0;
+    	padding: 0;
+    	margin: 0 auto;
+    	position: relative;
+		overflow: visible;
+    }
+	.university-info{
+	    background-color: #ffffff1a;
+	    width: 539px;
+	    height: 350px;
+	    border-radius: 10px;
+	    text-align: center;
+	    color: white;
+		float: left;
+		position: relative;
+	}
+    .about-title{
+    	width: 100%;
+		height: 91px;
+    }
+	.about-pic{
+		position: absolute;
+		top: -56px;
+		left: 201px;
+		width: 137px;
+		height: 42px;
+	}
+	.about-info{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+	}
+	.info-title-wrap{
+		width: 100%;
+		height:70px;
+		margin:0 auto;
+		border-bottom: 2px solid grey;
+	}
+	.info-title{
+		width:100%;
+		height:26px;
+		font-size: 20px;
+		padding-top:16px;
+		padding-left: 20px;
+		line-height: 26px;
+	    text-align: left;
+	    line-height: 14px;
+	    font-size: 20px;
+	    position: relative;
+	}
+	.info-en{
+		width: 100%;
+		height:15px;
+		line-height: 15px;
+		text-align: left;
+		font-size: 10px;
+		padding-top: 5px;
+		padding-left: 20px;
+	}
+	.info-content{
+		width:519px;
+		height:210px;
+		line-height:20px;
+		margin:10px auto;
+	}
+	.info-content>p{
+		font-size: 12px !important;
+		color: white;
+		line-height:20px;
+		text-align: left;
+		text-indent: 2em;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	.info-content p:nth-child(1){
+		padding-bottom: 5px;
+	}
+	.info-more{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		border-top: 2px solid grey;
+	}
+	.info-more>a{
+		display: block;
+		width: 85px;
+		height: 19px;
+		margin-top:15px;
+		float: right;
+		margin-right: 40px;
+		background: url(../image/find-more.png);
+	}
+	.yxvideo{
+		width: 61px;
+		height: 15px;
+		position: absolute;
+		top: 282px;
+		right: 0px;
+		background: url(../image/yxvideo.png);
+		background-size: cover;
+	}
+	.about-info>a>i{
+	    font-size: 20px;
+	    padding-right: 10px;
+	}
+
+    .photo-reports{
+		width: 501px;
+		margin-left:67px;
+		float: left;
+	}
+	.photo-reports .pic{
+		 width: 501px;
+         height: 192px;
+         background: url("../image/about-card.png")no-repeat center center;
+	     background-size: cover;
+	     border-radius: 10px;
+	 }
+	 .photo-reports .video{
+	 	 width: 501px;
+	 	 height: 192px;
+         margin-top: 15px;
+         background: url("../image/video.png")no-repeat center center;
+	     background-size: cover;
+	     border-radius: 10px;
+	  }
+	  
+	  
+	  .culture{
+		  width: 100%;
+	  }
+	   .culture>ul{
+	  	  width: 1200px !important;
+		  height: 145px;
+	}
+   .culture>ul>li{
+	   width: 250px;
+	   height: 100%;
+	   float: left;
+	   margin-right:30px;
+	}
+	.culture>ul>li:nth-child(1){
+		margin-left:60px;
+	}
+	 .culture>ul>li:nth-child(3){
+		margin-right:60px;
+	}
+	 .culture>ul>li:nth-child(4){
+		 width:210px;
+		padding-left: 30px;
+		border-left: 1px solid grey;
+	}
+	dl,dt,ul,li{
+		list-style: none;
+	}
+	.culture>dl{
+		height:100%;
+		float: left;
+		border: 0;
+		margin: 0;
+		padding:0;
+		color: white;
+	}
+	dt{
+		font-size: 18px;
+		line-height: 25px;
+		color: white;
+	}
+	dd{
+		float: left;
+		display: block;
+		line-height: 25px;
+		margin-right: 30px;
+	}
+	dd>a{
+		line-height: 25px;
+		font-size: 14px;
+		color: white;
+	}
+	
+	.culture-footer{
+		width: 100%;
+		height: 208px;
+		margin: 0 auto;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.culture-footer-content{
+		width: 1200px;
+		height: 100%;
+		margin:0 auto;
+		padding-top:50px;
+		overflow: hidden;
+	}
+	.campus-information{
+		width:275px;
+		float: left;
+	}
+	.campus-information>p{
+		color: white;
+		line-height: 25px;
+		font-size: 12px;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	
+	.campus-logo{
+		width: 380px;
+		margin-left:145px;
+		margin-top:25px;
+		float: left;
+	}
+	.campus-pic>img{
+	    width: 245px;
+	    border-right: 2px solid #fff;
+	}
+
+	.QR-code{
+		margin-right: 20px;
+	}
+	#contTEN{
+		margin: 0 !important;
+		border: 0 !important;
+		padding: 0 !important;
+	}
+		
+	 
+	
+}
+/* 内容1200px*/
+
+/* 内容1556px 屏幕大于1600px*/
+@media (min-width:1600px){
+    .about-us{
+		width: 100%;
+		height: 700px;
+	}
+	.about-us .container{
+		width: 1520px !important;
+		height:700px;
+		border: 0;
+		padding: 0;
+		margin: 0 auto;
+        position: relative;
+        overflow: visible;
+	}
+	.university-info{
+	    background-color: #ffffff1a;
+	    width: 700px;
+	    height: 390px;
+	    border-radius: 10px;
+	    text-align: center;
+	    color: white;
+		float: left;
+		position: relative;
+	}
+    .about-title{
+    	width: 100%;
+		height: 118px;
+    }
+	.about-pic{
+		position: absolute;
+		top: -91px;
+		left: 260px;
+	}
+	.about-info{
+		display: block;
+		justify-content: center;
+		align-items: center;
+        height: auto;
+        overflow: visible;
+	}
+	.info-title-wrap{
+		width: 100%;
+		height:70px;
+		margin:0 auto;
+		border-bottom: 2px solid grey;
+	}
+	.info-title{
+		width:100%;
+		height:26px;
+		font-size: 20px;
+		padding-top:16px;
+		padding-left: 20px;
+		line-height: 26px;
+	    text-align: left;
+	    line-height: 14px;
+	    font-size: 20px;
+	    position: relative;
+	}
+	.info-en{
+		width: 100%;
+		height:15px;
+		line-height: 15px;
+		text-align: left;
+		font-size: 10px;
+		padding-top: 5px;
+		padding-left: 20px;
+	}
+	.info-content{
+		width:660px;
+		height:260px;
+		line-height:20px;
+		margin:10px auto;
+	}
+	.info-content>p{
+		font-size: 16px !important;
+		color: white;
+		line-height:25px;
+		text-align: left;
+		text-indent: 2em;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	.info-content p:nth-child(1){
+		padding-bottom: 5px;
+	}
+	.info-more{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		border-top: 2px solid grey;
+	}
+	.info-more>a{
+		display: block;
+		width: 85px;
+		height: 19px;
+		margin-top:15px;
+		float: right;
+		margin-right: 40px;
+		background: url(../image/find-more.png);
+	}
+	.yxvideo{
+		width: 80px;
+		height: 20px;
+		position: absolute;
+		top: 368px;
+		right: 0px;
+		background: url(../image/yxvideo.png);
+	}
+
+    .photo-reports{
+		width: 501px;
+		margin-left:70px;
+		float: left;
+	}
+	.photo-reports .pic{
+		 width: 650px;
+         height: 250px;
+         background: url("../image/about-card.png")no-repeat center center;
+	     background-size: cover;
+	     border-radius: 10px;
+	 }
+	 .photo-reports .video{
+	 	 width: 650px;
+	 	 height: 250px;
+         margin-top: 15px;
+         background: url("../image/video.png")no-repeat center center;
+	     background-size: cover;
+	     border-radius: 10px;
+	  }
+
+	  .culture{
+		width: 100%;
+	}
+	 .culture>ul{
+		width: 1520px !important;
+		height: 192px;
+  }
+ .culture>ul>li{
+	 width: 326px;
+	 height: 100%;
+	 float: left;
+	 margin-right:40px;
+  }
+  .culture>ul>li:nth-child(1){
+	  margin-left:80px;
+  }
+   .culture>ul>li:nth-child(3){
+	  margin-right:80px;
+  }
+   .culture>ul>li:nth-child(4){
+	   width:250px;
+	  padding-left: 30px;
+	  border-left: 1px solid grey;
+  }
+  dl,dt,ul,li{
+	  list-style: none;
+  }
+  .culture>dl{
+	  height:100%;
+	  float: left;
+	  border: 0;
+	  margin: 0;
+	  padding:0;
+	  color: white;
+  }
+  dt{
+	  font-size: 22px;
+	  line-height: 30px;
+	  color: white;
+  }
+  dd{
+	  float: left;
+	  display: block;
+	  line-height: 35px !important;
+	  margin-right: 30px;
+  }
+  dd>a{
+	  line-height: 30px;
+	  font-size: 16px;
+	  color: white;
+  }
+  
+  .culture-footer{
+	  width: 100%;
+	  margin: 0 auto;
+	  background-color: rgba(0,0,0,0.5);
+  }
+  .culture-footer-content{
+	  width: 1520px;
+	  height: 100%;
+	  margin:0 auto;
+	  padding-top:50px;
+	  overflow: hidden;
+  }
+  .campus-information{
+	  width:355px;
+	  float: left;
+  }
+  .campus-information>p{
+	  color: white;
+	  line-height: 25px;
+	  font-size: 14px;
+	  padding: 0;
+	  margin: 0;
+	  border: 0;
+  }
+  
+  .campus-logo{
+	  width: 472px;
+	  margin-left:187px;
+	  margin-top:25px;
+	  float: left;
+  }
+  .campus-pic>img{
+	  width: 245px;
+	  border-right: 2px solid #fff;
+  }
+  .campus-logo>p{
+	  text-align: center;
+	  margin-top:72px;
+	  color: white;
+	  font-size: small;
+  }
+  .QR-code{
+	  margin-right: 20px;
+  }
+  #contTEN{
+	  margin: 0 !important;
+	  border: 0 !important;
+	  padding: 0 !important;
+  }
+	  
+	
+	
+	
+	
+}
+/* 内容1556px*/
